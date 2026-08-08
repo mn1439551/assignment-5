@@ -120,5 +120,97 @@
       </tr>
     </table>
     <hr />
+    <h2>Interactive Form Controls</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Full name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="John Doe"
+      /><br /><br />
+
+      <label for="input_password">Password:</label>
+      <input
+        type="password"
+        id="input_password"
+        name="user_password"
+        required
+      /><br /><br />
+
+      <label for="input_email">Email:</label>
+      <input
+        type="email"
+        id="input_email"
+        name="user_email"
+        required
+      /><br /><br />
+
+      <label for="input_age">Age:</label>
+      <input
+        type="number"
+        id="input_age"
+        name="user_age"
+        min="1"
+        max="120"
+      /><br /><br />
+
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" checked />
+      <label for="male">Male</label>
+
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Female</label><br /><br />
+
+      <h3>Topics</h3>
+      <input
+        type="checkbox"
+        id="input_web_development"
+        name="user_web_development"
+        value="Web Development"
+        checked
+      />
+      <label for="input_web_development">Web Development</label><br /><br />
+
+      <input type="checkbox" id="input_database" />
+      <label for="input_database">Database</label>
+      <br /><br />
+
+      <label for="input_preferred_browser">Preferred Browser</label>
+      <input
+        list="browsers"
+        id="input_preferred_browser"
+        name="user_preferred_browser"
+      />
+
+      <datalist id="browsers">
+        <option value="Google Chrome" />
+        <option value="Mozilla Firefox" />
+        <option value="Microsoft Edge" />
+        <option value="Safari" />
+        <option value="Opera" /></datalist
+      ><br /><br />
+
+      <select name="" id="">
+        <optgroup label="contains:">
+          <option value="undergraduate">Undergraduate</option>
+          <option value="postgraduate">Postgraduate</option>
+          <option value="doctorate">Doctorate</option>
+        </optgroup>
+      </select>
+      <br /><br />
+      <label for="input_feedback">Feedback:</label><br />
+      <textarea
+        name="user_feedback"
+        id="input_feedback"
+        cols="30"
+        rows="5"
+        placeholder="Enter your feedback here..."
+      ></textarea
+      ><br /><br />
+      <button type="submit" value="Submit Form">Submit Form</button>
+      <button type="reset" value="Reset Form">Reset form</button>
+    </form>
+    <hr />
   </body>
 </html>
